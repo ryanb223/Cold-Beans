@@ -34,10 +34,36 @@
 <body>
 <h1> Hot Beans</h1>
 
+<title>My Example</title>
 
 <div id="cont1">
 <p>This company is a web development company that specialises in the development of webpages for clients, we are looking more employees who have experience in web development. We have many other experienced employees, so we have high expectations of the people who fill out the job application listed below. </p>
 </div>
+
+
+<title>My Example</title>
+
+<input id="go" type="button" value="Print this Page" onclick="window.print();">
+
+
+<time id="msg"></time>
+
+<script>
+  // Create a JavaScript Date object for the current date and time, and set the desired options.
+  var date = new Date(),
+      options = { weekday: "short", month: "short", day: "numeric", year: "2-digit" };
+ 
+  // Convert to locale string and add a locale and the options
+  date = date.toLocaleString( "en-US", options );
+ 
+  // Output the date to the above HTML element
+  document.getElementById("msg").innerHTML = date;
+</script>
+
+
+
+<input type="button" value="Click me" onclick="alert('Thanks... I feel much better now!');">
+
 <h2>Page Links</h2>
 
 
@@ -46,6 +72,11 @@
 <li><a href="page1.html">Our Job Requirements</a>
 <li><a href="page2.html">Form page</a>
 <li><a href="page3.html">Contacts</a>	
+
+
+<title>My Example</title>
+
+
 	
 
 	
